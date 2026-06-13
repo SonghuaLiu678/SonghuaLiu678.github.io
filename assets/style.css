@@ -1,0 +1,130 @@
+/* ---------- Base ---------- */
+:root {
+  --max-width: 760px;
+  --text-color: #222;
+  --muted-color: #666;
+  --link-color: #1a4f8b;
+  --border-color: #ddd;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Georgia", "Times New Roman", serif;
+  color: var(--text-color);
+  line-height: 1.65;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- Header / Nav ---------- */
+header.site-header {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+}
+
+header.site-header h1 {
+  font-size: 28px;
+  margin: 0 0 4px;
+}
+
+header.site-header p.subtitle {
+  margin: 0 0 12px;
+  color: var(--muted-color);
+  font-size: 16px;
+}
+
+nav.site-nav a {
+  margin-right: 18px;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 0.02em;
+}
+
+nav.site-nav a.active {
+  color: var(--text-color);
+  text-decoration: underline;
+}
+
+/* ---------- Sections ---------- */
+section {
+  margin-bottom: 36px;
+}
+
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 6px;
+  margin-bottom: 16px;
+}
+
+h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+
+.muted {
+  color: var(--muted-color);
+}
+
+/* ---------- Publications / Working papers ---------- */
+.paper {
+  margin-bottom: 22px;
+}
+
+.paper .status {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #a05a00;
+  border: 1px solid #a05a00;
+  border-radius: 3px;
+  padding: 1px 6px;
+  margin-bottom: 6px;
+}
+
+.paper .abstract {
+  margin-top: 6px;
+  font-size: 15px;
+}
+
+/* ---------- Footer ---------- */
+footer {
+  margin-top: 60px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  font-size: 13px;
+  color: var(--muted-color);
+}
+
+/* ---------- CV page ---------- */
+.cv-entry {
+  margin-bottom: 14px;
+}
+
+.cv-entry .year {
+  font-weight: bold;
+  display: inline-block;
+  min-width: 90px;
+}
